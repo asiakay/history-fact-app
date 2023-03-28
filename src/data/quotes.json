@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "year": 1881,
+    "person": "Granville T. Woods",
+    "description": "Awarded several patents for his innovations in the field of electrical engineering, including the development of a new type of induction telegraph.",
+    "category": "Science and Technology",
+    "source": "https://www.blackpast.org/african-american-history/woods-granville-t-1856-1910/"
+  },
+  {
+    "id": 2,
+    "year": 1886,
+    "person": "Alice H. Parker",
+    "description": "Developed a new type of heating system that used natural gas.",
+    "category": "Science and Technology",
+    "source": "https://www.nationalgeographic.com/history/magazine/2020/11-12/the-african-american-innovators-behind-everyday-devices-we-take-for-granted/"
+  },
+  {
+    "id": 3,
+    "year": 1887,
+    "person": "George Washington Carver",
+    "description": "Began his work as an agricultural researcher and educator, developing new techniques for soil conservation and crop rotation that helped improve agricultural production in the southern US.",
+    "category": "Science and Education",
+    "source": "https://www.biography.com/scientist/george-washington-carver"
+  },
+  {
+    "id": 4,
+    "year": 1885,
+    "person": "Sarah E. Goode",
+    "description": "She was the first African American woman to receive a patent for her invention of a folding cabinet bed.",
+    "category": "Business and Entrepreneurship",
+    "source": "https://www.biography.com/inventors/sarah-e-goode"
+  },
+  {
+    "id": 5,
+    "year": 1897,
+    "person": "Solomon Carter Fuller",
+    "description": "Fuller was the first African-American psychiatrist, however, he was also a pioneer in the field of Alzheimer’s disease. He worked with Alois Alzheimer as a research assistant and was the first to translate much of the pivotal work done in the field into English. Additionally, he has published what is now recognized to be the first comprehensive review of Alzheimer’s disease, in it reporting the ninth case ever described.",
+    "category": "Science and Medicine",
+    "source": "https://alz-journals.onlinelibrary.wiley.com/doi/full/10.1002/alz.12183"
+  },
+  {
+    "id": 6,
+    "year": 1894,
+    "person": "William H. Reynolds",
+    "description": "Awarded several patents for his innovations in the field of transportation, including the development of a new type of steam-powered locomotive.",
+    "category": "Science and Technology",
+    "source": "https://www.black-inventor.com/william-h-reynolds"
+  },
+  {
+    "id": 7,
+    "year": 1895,
+    "person": "Robert Church Sr.",
+    "description": "Became a pioneering business leader in the field of mining and one of the wealthiest African Americans in the US.",
+    "category": "Business and Entrepreneurship",
+    "source": "https://www.blackpast.org/african-american-history/robert-reed-church-sr-1839-1912/"
+  },
+  {
+    "id": 8,
+    "year": 1896,
+    "person": "Robert R. Moton",
+    "description": "Became the second president of Tuskegee Institute, a historically Black college in Alabama, and was a leading figure in the African American education movement.",
+    "category": "Education and Leadership",
+    "source": "https://www.tuskegee.edu/discover-tu/tu-presidents/robert-russa-moton"
+  },
+  {
+    "id": 9,
+    "year": 1898,
+    "person": "Norbert Rillieux",
+    "description": "Awarded several patents for his innovations in the field of sugar refining, including the development of a new process for refining sugar using vacuum evaporation.",
+    "category": "Science and Technology",
+    "source": "https://www.blackpast.org/african-american-history/rillieux-norbert-1806-1894/"
+  },
+  {
+    "id": 10,
+    "year": 1895,
+    "person": "Garrett A. Morgan",
+    "description": "Awarded several patents for his innovations in the field of telecommunications, including the development of a new type of traffic signal and an early version of the gas mask.",
+    "category": "Science and Technology",
+    "source": "https://www.blackpast.org/african-american-history/morgan-garrett-sr-1877-1963/"
+  },
+  {
+    "id": 11,
+    "year": 1880,
+    "person": "Madam C.J. Walker",
+    "description": "Became the first female self-made millionaire in the US, building a successful cosmetics and hair care business for African American women.",
+    "category": "Business and Entrepreneurship",
+    "source": "https://www.history.com/topics/black-history/madame-c-j-walker"
+  },
+  {
+    "id": 12,
+    "year": 1892,
+    "person": "Ida B. Wells",
+    "description": "Published \"Southern Horrors,\" a pamphlet that exposed the widespread practice of lynching in the United States.",
+    "category": "Civil Rights and Social Justice",
+    "source": "https://www.britannica.com/biography/Ida-B-Wells-Barnett"
+  },
+  {
+    "id": 13,
+    "year": 1903,
+    "person": "W.E.B. Du Bois",
+    "description": "Published \"The Souls of Black Folk,\" a groundbreaking work of sociology that explored the lived experiences of African Americans in the United States.",
+    "category": "Education and Literature",
+    "source": "https://www.naacp.org/naacp-history-w-e-b-dubois/"
+  },
+  {
+    "id": 14,
+    "year": 1913,
+    "person": "Rosa Parks",
+    "description": "Born in Tuskegee, Alabama. She later became an important figure in the American civil rights movement, famously refusing to give up her seat on a Montgomery, Alabama bus in 1955.",
+    "category": "Civil Rights and Social Justice",
+    "source": "https://www.biography.com/activist/rosa-parks"
+  },
+  {
+    "id": 15,
+    "year": 1926,
+    "person": "Carter G. Woodson",
+    "description": "Founded Black History Month, which is celebrated each February to honor the contributions of African Americans to American society.",
+    "category": "Education and Literature",
+    "source": "https://naacp.org/find-resources/history-explained/civil-rights-leaders/carter-g-woodson"
+  },
+  {
+    "id": 16,
+    "year": 1932,
+    "person": "Hattie McDaniel",
+    "description": "Became the first Black American to win an Academy Award, for her performance in the film \"Gone with the Wind.\"",
+    "category": "Arts and Entertainment",
+    "source": "https://www.oscars.org/history/black-and-white-facts"
+  },
+  {
+    "id": 17,
+    "year": 1947,
+    "person": "Jackie Robinson",
+    "description": "Became the first Black American to play Major League Baseball, breaking the color barrier in professional sports.",
+    "category": "Sports and Athletics",
+    "source": "https://www.biography.com/athlete/jackie-robinson"
+  },
+  {
+    "id": 18,
+    "year": 1954,
+    "person": "Thurgood Marshall",
+    "description": "Successfully argued the landmark case Brown v. Board of Education before the Supreme Court, leading to the ruling that segregation in public schools was unconstitutional.",
+    "category": "Civil Rights and Social Justice",
+    "source": "https://www.history.com/topics/black-history/thurgood-marshall"
+  },
+  {
+    "id": 19,
+    "year": 1963,
+    "person": "Martin Luther King Jr.",
+    "description": "Delivered his famous \"I Have a Dream\" speech during the March on Washington for Jobs and Freedom.",
+    "category": "Civil Rights and Social Justice",
+    "source": "https://www.history.com/topics/black-history/martin-luther-king-jr"
+  },
+  {
+    "id": 20,
+    "year": 1971,
+    "person": "Carl Stokes",
+    "description": "Became the first African American mayor of a major US city. He was elected mayor of Cleveland, Ohio.",
+    "category": "Politics and Government",
+    "source": "https://www.britannica.com/biography/Carl-Stokes"
+  },
+  {
+    "id": 21,
+    "year": 1984,
+    "person": "Jesse Jackson",
+    "description": "Launched his first presidential campaign, becoming the first African American to mount a serious bid for the presidency.",
+    "category": "Politics and Government",
+    "source": "https://kinginstitute.stanford.edu/encyclopedia/jackson-jesse-louis"
+  },
+  {
+    "id": 22,
+    "year": 1989,
+    "person": "L. Douglas Wilder",
+    "description": "Became the first African American elected governor of a US state, serving as governor of Virginia.",
+    "category": "Politics and Government",
+    "source": "https://www.britannica.com/biography/Douglas-Wilder"
+  },
+  {
+    "id": 23,
+    "year": 1992,
+    "person": "Mae Jemison",
+    "description": "Became the first Black woman to travel into space, as a member of the crew of the Space Shuttle Endeavour.",
+    "category": "Science and Technology",
+    "source": "https://www.nasa.gov/image-feature/mae-jemison-first-african-american-woman-in-space/"
+  },
+  {
+    "id": 24,
+    "year": 1997,
+    "person": "Tiger Woods",
+    "description": "Became the first African American golfer to win the Masters Tournament, one of the most prestigious events in professional golf.",
+    "category": "Sports and Athletics",
+    "source": "https://www.pgatour.com/news/2020/04/13/tiger-woods-wins-1997-masters.html"
+  },
+  {
+    "id": 25,
+    "year": 2004,
+    "person": "Barack Obama",
+    "description": "Delivered the keynote address at the Democratic National Convention, propelling him to national prominence and paving the way for his eventual election as the 44th President and the first Black President of the United States.",
+    "category": "Politics and Government",
+    "source": "https://www.whitehouse.gov/about-the-white-house/presidents/barack-obama/"
+  },
+  {
+    "id": 26,
+    "year": 2005,
+    "person": "Condoleezza Rice",
+    "description": "Became the first Black woman to serve as US Secretary of State, serving in that role under President George W. Bush.",
+    "category": "Politics and Government",
+    "source": "https://www.biography.com/political-figure/condoleezza-rice"
+  },
+  {
+    "id": 27,
+    "year": 2008,
+    "person": "Misty Copeland",
+    "description": "Became the first African American woman to be promoted to principal dancer at the American Ballet Theatre, one of the most prestigious ballet companies in the world.",
+    "category": "Arts and Entertainment",
+    "source": "https://www.abt.org/people/misty-copeland/"
+  },
+  {
+    "id": 28,
+    "year": 2013,
+    "person": "Kamala Harris",
+    "description": "Became the first Black and South Asian American woman elected to the US Senate, representing California.",
+    "category": "Politics and Government",
+    "source": "https://www.cnn.com/2016/11/09/politics/kamala-harris-elected-senate-california/index.html"
+  },
+  {
+    "id": 29,
+    "year": 2018,
+    "person": "Ryan Coogler",
+    "description": "Directed the blockbuster film \"Black Panther,\" which became a cultural phenomenon and the highest-grossing solo superhero film of all time.",
+    "category": "Arts and Entertainment",
+    "source": "https://www.imdb.com/name/nm3363032/"
+  },
+  {
+    "id": 30,
+    "year": 2020,
+    "person": "Kizzmekia Corbett",
+    "description": "Led the team that developed the Moderna COVID-19 vaccine, making her one of the key figures in the fight against the COVID-19 pandemic.",
+    "category": "Science and Technology",
+    "source": "https://www.hsph.harvard.edu/profile/kizzmekia-s-corbett/"
+  }
+]
