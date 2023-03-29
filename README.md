@@ -22,12 +22,12 @@ To install and run the application on your local machine, follow these steps:
 
 | Features                          | Priority | Ease to Implement | Doing | Done |
 | --------------------------------- | -------- | ----------------- | ----- | ---- |
-| Styled HTML/CSS components        |          |                   |       | [X]  |
+| Styled HTML/CSS components        |          |                   |       | [x]  |
 | React Hooks to manage state       |          |                   |       | [x]  |
 | JSON Database                     |          |                   |       | [x]  |
-| Mobile Responsiveness             | High     | High              | [X]   |      |
+| Mobile Responsiveness             | High     | High              | [x]   |      |
 | Accessibility                     | High     | Medium            | [x]   |      |
-| Search Functionality              | High     | Medium            | [X]   |      |
+| Search Functionality              | High     | Medium            | [x]   |      |
 | User Authentication               | High     | High              |       |      |
 | Social Sharing                    | Medium   | Low               |       |      |
 | Multi-Language Support            | Medium   | Medium            |       |      |
