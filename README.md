@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# HistoryFacts
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+HistoryFacts is a web application built using ReactJS that provides users with positive contributions made by historically marginalized groups. The app aims to challenge false narratives that link race with positive contributions to society and shed light on the pervasive nature of systemic racism.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Installation Instructions](#installation-instructions)
+- [Features and Functionality](#features-and-functionality)
+- [Contributing](#contributing)
 
-### `npm start`
+## Installation Instructions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To install and run the application on your local machine, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository: `git clone https://github.com/asiakay/history-fact-app.git`
+2. Navigate to the project directory: `cd history-fact-app`
+3. Install dependencies: `npm install`
+4. Run the application: `npm start`
+5. Open your web browser and navigate to `http://localhost:3000`
 
-### `npm test`
+## Features and Functionality
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Features                          | Priority | Ease to Implement | Doing | Done |
+| --------------------------------- | -------- | ----------------- | ----- | ---- |
+| Styled HTML/CSS components        |          |                   |       | [X]  |
+| React Hooks to manage state       |          |                   |       | [x]  |
+| JSON Database                     |          |                   |       | [x]  |
+| Mobile Responsiveness             | High     | High              | [X]   |      |
+| Accessibility                     | High     | Medium            | [x]   |      |
+| Search Functionality              | High     | Medium            | [X]   |      |
+| User Authentication               | High     | High              |       |      |
+| Social Sharing                    | Medium   | Low               |       |      |
+| Multi-Language Support            | Medium   | Medium            |       |      |
+| User Profiles                     | Medium   | High              |       |      |
+| Integration with External APIs    | Medium   | Medium            |       |      |
+| Commenting System                 | Low      | Medium            |       |      |
+| Gamification/Interactive Elements | Low      | Low               |       |      |
+| Virtual Tours                     | Low      | High              |       |      |
 
-### `npm run build`
+## Contributing
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+We welcome contributions to the HistoryFacts project. If you encounter a bug, have a feature request, or want to contribute code, please follow these guidelines:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Bug Reports and Feature Requests
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Check the [issue tracker](https://github.com/asiakay/history-fact-app/issues) for existing bugs and feature requests before opening a new issue.
+2. If you don't find an existing issue, open a new issue and describe the bug or feature request in detail.
+3. Assign the appropriate labels to the issue.
 
-### `npm run eject`
+### Code Contributions
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Fork the repository and create a new branch for your feature or bug fix: `git checkout -b feature-branch-name`
+2. Make changes to the code and commit them with a descriptive message: `git commit -m "Add new feature"`
+3. Push your changes to your forked repository: `git push origin feature-branch-name`
+4. Open a pull request and describe the changes you've made.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[MIT](https://github.com/asiakay/history-fact-app/blob/main/LICENSE)
