@@ -1,6 +1,6 @@
-# HistoryFacts
+# BlackHistoryFacts
 
-HistoryFacts is a web application built using ReactJS that provides users with positive contributions made by historically marginalized groups. The app aims to challenge false narratives that link race with positive contributions to society and shed light on the pervasive nature of systemic racism.
+BlackHistoryFacts is a web application built using ReactJS that provides users with positive contributions made by historically marginalized groups. The app aims to challenge false narratives that link race with positive contributions to society and shed light on the pervasive nature of systemic racism.
 
 ## Table of Contents
 
