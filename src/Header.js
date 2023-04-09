@@ -18,6 +18,13 @@ const StyledHeader = styled.header`
   display: flex;
   align-items: center;
   color: white;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    fill: #ffd700; /* gold color */
+    margin-right: 8px;
+  }
 `;
 
 

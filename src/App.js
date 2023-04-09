@@ -3,15 +3,25 @@ import QuoteDisplay from './components/QuoteDisplay';
 import './style.css'
 import Header from './Header';
 import Footer from './Footer';
+import styled from 'styled-components';
 
+const AppMain = styled.main`
+display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background-color: #f2f2f2;
+  margin-top: 0px;
+`;
 
 function App() {
   return (
     <div className="App">
       <Header/>
-      <main>
+      <AppMain>
         <QuoteDisplay />
-      </main>
+      </AppMain>
 
   
 
