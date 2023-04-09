@@ -24,7 +24,7 @@ background-color: #ffffff;
 const QuoteText = styled.p`
 font-family: Arial, sans-serif;
   
-font-size: 1.5rem;
+font-size: 1 rem;
   font-weight: bold;
   margin-bottom: 1rem;
   color: #333;

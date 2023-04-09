@@ -155,7 +155,7 @@ main {
   border-color: #0062cc;
 }
 
-.app-footer {
+/* .app-footer {
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -163,3 +163,4 @@ main {
   margin: 100px;
   text-align: justify;
 }
+ */
