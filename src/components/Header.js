@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Login from '../components/Login';
 
 const StyledHeader = styled.header`
   height: 60px;
@@ -37,6 +38,9 @@ function Header({ categories, selectedCategory, handleCategoryChange }) {
   <path d="M14.293,5.707l-7.485,7.485l-1.414-1.414l7.485-7.485c0.391-0.391,1.023-0.391,1.414,0l0,0C14.684,4.684,14.684,5.316,14.293,5.707z"/>
   <path d="M3.008,20.975L0,24l2.025-2.025c0.096-0.096,0.204-0.182,0.318-0.255C2.438,21.486,2.721,21,3.268,21H19v-2H3.109C3.057,18.875,3.022,18.75,3,18.623V18H2v2C2,20.202,2.798,20.986,3.008,20.975z"/>
 </svg> Black History Facts</Title>
+<Login />
+
+
 <select value={selectedCategory} onChange={handleCategoryChange}>
         <option value="">All Categories</option>
         {categories.map((category) => (
