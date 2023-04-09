@@ -58,8 +58,8 @@ const ButtonContainer = styled.div`
 const Button = styled.button`
   font-size: 1rem;
   border: none;
-  background-color: #2c2c2c;
-  color: #fff;
+  background-color: #16d02b;
+  color: #000;
   border-radius: 4px;
   cursor: pointer;
   font-size: 1.5rem;
@@ -68,7 +68,7 @@ const Button = styled.button`
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: #444;
+    background-color: #ffd700;
   }
 
   &:active {

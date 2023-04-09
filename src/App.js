@@ -15,7 +15,7 @@ display: flex;
   align-items: center;
   justify-content: center;
   height: 80vh;
-  background-color: #f2f2f2;
+  background-color: #ca1122;
   margin-top: 0px;
 `;
 
