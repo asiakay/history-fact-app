@@ -12,6 +12,13 @@ import Navbar from 'react-bootstrap/Navbar';
 
 
 function Header() {
+  const breakpoints = {
+    sm: '480px',
+    md: '768px',
+    lg: '1024px',
+    xl: '1280px',
+  };
+
   const StyledHeader = styled.header`
   height: 60px;
   background-color: #000;
@@ -20,6 +27,14 @@ function Header() {
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+
+  @media (min-width: ${breakpoints.md}) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: ${breakpoints.lg}) {
+    padding: 0 60px;
+  }
 `;
 
  const Title = styled.h1`
@@ -35,6 +50,27 @@ function Header() {
     height: 24px;
     fill: #ffd700; /* gold color */
     margin-right: 8px;
+  }
+
+
+  @media (min-width: ${breakpoints.md}) {
+    font-size: 28px;
+
+    svg {
+      width: 28px;
+      height: 28px;
+      margin-right: 12px;
+    }
+  }
+
+  @media (min-width: ${breakpoints.lg}) {
+    font-size: 32px;
+
+    svg {
+      width: 32px;
+      height: 32px;
+      margin-right: 16px;
+    }
   }
 `;
 

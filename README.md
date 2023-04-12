@@ -57,3 +57,12 @@ We welcome contributions to the HistoryFacts project. If you encounter a bug, ha
 ## License
 
 [MIT](https://github.com/asiakay/history-fact-app/blob/main/LICENSE)
+
+ <select value={selectedCategory} onChange={handleCategoryChange}>
+      <option value="">All Categories</option>
+      {categories.map((category, index) => (
+        <option key={index} value={category}>
+          {category}
+        </option>
+      ))}
+    </select>

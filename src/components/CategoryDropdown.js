@@ -2,6 +2,13 @@ import React from 'react';
 import { Dropdown, /* DropdownButton */ } from 'react-bootstrap';
 import styled from 'styled-components';
 
+const breakpoints = {
+  sm: '480px',
+  md: '768px',
+  lg: '1024px',
+  xl: '1280px',
+};
+
 
 const StyledDropdown = styled(Dropdown)`
   // Add your styles for the Dropdown here
@@ -12,6 +19,15 @@ const StyledDropdown = styled(Dropdown)`
     padding: 10px 20px;
     width: 100%;
   }
+
+  @media (min-width: ${breakpoints.md}) {
+    padding: 12px 24px;
+  }
+
+  @media (min-width: ${breakpoints.lg}) {
+    padding: 14px 28px;
+  }
+}
 `;
 
 const StyledDropdownItem = styled(Dropdown.Item)`
@@ -19,6 +35,14 @@ const StyledDropdownItem = styled(Dropdown.Item)`
   &:hover {
     background-color: #4caf50;
     color: white;
+  }
+
+  @media (min-width: ${breakpoints.md}) {
+    font-size: 16px;
+  }
+
+  @media (min-width: ${breakpoints.lg}) {
+    font-size: 18px;
   }
 `;
 
