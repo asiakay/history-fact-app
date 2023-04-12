@@ -82,7 +82,7 @@ const ButtonContainer = styled.div`
 `;
 
 const Button = styled.button`
-  font-size: 1rem;
+ font-size: 1rem;
   border: none;
   background-color: #16d02b;
   color: #000;
@@ -146,7 +146,7 @@ if (!filteredQuotes || filteredQuotes.length === 0) {
       <QuotePerson>{person}</QuotePerson>
       <QuoteText>{description}</QuoteText>
       <ButtonContainer>
-      <Button onClick={getRandomQuote}>New Quote</Button><br/>
+      <Button onClick={getRandomQuote}>New Fact</Button><br/>
       <Button onClick={() => window.open(source, '_blank')}>Learn More</Button>
       </ButtonContainer>
     </QuoteDisplayContainer>

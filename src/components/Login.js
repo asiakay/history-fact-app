@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { auth } from '../firebase/firebase';
+import { auth, db } from '../firebase/firebase';
 import { GoogleAuthProvider } from 'firebase/auth';
 import { createUserProfileDocument } from '../utils/userProfile';
 import { onAuthStateChanged } from 'firebase/auth';
 import { Modal, Button, Form, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
 
 const Login = () => {
   const [user, setUser] = useState(null);
@@ -23,29 +25,37 @@ const Login = () => {
     };
   }, []);
 
-  const signInWithGoogle = async () => {
+  const signInWithGoogle = async (isSignUp) => {
     try {
       const googleProvider = new GoogleAuthProvider();
       googleProvider.setCustomParameters({ prompt: 'select_account' });
 
       const result = await auth.signInWithPopup(googleProvider);
       const user = result.user;
+      if (isSignUp){
       await createUserProfileDocument(user);
-      setShowModal(false);
+    }
+      //setShowModal(false);
     } catch (error) {
       console.error('Error during Google sign in: ', error);
     }
   };
 
-  const signUpWithEmail = async (e) => {
-    e.preventDefault();
+  const signUpWithEmail = async (email, password, displayName) => {
+    //e.preventDefault();
     try {
       const { user } = await auth.createUserWithEmailAndPassword(email, password);
-      await createUserProfileDocument(user);
-      setEmail('');
+      await db.collection('users').doc(user.uid).set({
+        displayName,
+        email,
+        photoURL: '', // Set an empty photoURL initially, or use a default image URL
+        bio: '',
+        favorites: [],
+      });
+     /*  setEmail('');
       setPassword('');
       setIsSignUp(false);
-      setShowModal(false);
+      setShowModal(false); */
     } catch (error) {
       console.error('Error during email sign up: ', error);
     }
@@ -63,9 +73,13 @@ const Login = () => {
     }
   };
 
+  const navigate = useNavigate();
+
+
   const signOut = async () => {
     try {
       await auth.signOut();
+      navigate('/'); // redirect to the home pag
     } catch (error) {
       console.error('Error during sign out: ', error);
     }
@@ -79,11 +93,11 @@ const Login = () => {
       {user ? (
         <>
           <Nav className="me-2 d-flex align-items-center flex-nowrap">
-            <Nav.Item>
+             {/* <Nav.Item>
               <Nav.Link style={{ color: 'red' }}>
                 Welcome, {user.displayName}!
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item>  */}
             <Nav.Link as={Link} to="/profile" style={{ color: 'red' }}>
               Profile
             </Nav.Link>
@@ -157,8 +171,11 @@ Login
 <Button variant="secondary" onClick={() => setIsSignUp(true)}>
 Sign Up
 </Button>
-<Button variant="info" onClick={signInWithGoogle}>
-Login with Google
+<Button 
+variant="info" 
+onClick={() => signInWithGoogle(isSignUp)}
+>
+{isSignUp ? 'Sign Up' : 'Login'} with Google
 </Button>
 </Form>
 )}

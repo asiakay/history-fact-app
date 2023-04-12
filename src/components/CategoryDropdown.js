@@ -17,10 +17,10 @@ const StyledDropdown = styled(Dropdown)`
     color: white;
     border-radius: 0px;
     padding: 10px 20px;
-    width: 100%;
+    width: 95%;
   }
 
-  @media (min-width: ${breakpoints.md}) {
+  @media (min-width: ${breakpoints.sm}) {
     padding: 12px 24px;
   }
 

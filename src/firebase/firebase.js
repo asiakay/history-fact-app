@@ -48,5 +48,19 @@ const db = firebase.firestore();
   signInWithPopup: (provider) => auth.signInWithPopup(provider),
 };
  */
+export const getUserProfile = async (uid) => {
+  try {
+    const doc = await db.collection('users').doc(uid).get();
+    if (doc.exists) {
+      return { uid, ...doc.data() };
+    } else {
+      console.error('User not found in Firestore');
+      return null;
+    }
+  } catch (error) {
+    console.error('Error fetching user profile: ', error);
+    return null;
+  }
+};
 
 export { auth, provider, db };
