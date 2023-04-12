@@ -7,7 +7,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import styled from 'styled-components';
 import quotes from '../src/data/quotes.json';
-
+import CategoryDropdown from '../src/components/CategoryDropdown';
 
 const AppMain = styled.main`
 display: flex;
@@ -24,24 +24,25 @@ function App() {
       const [selectedCategory, setSelectedCategory] = useState('');
       const categories = Array.from(new Set(quotes.map((quote) => quote.category)));
     
-      const handleCategoryChange = (event) => {
-        const value = event.target.value;
-        setSelectedCategory(value === '' ? 'all' : value);
+      const handleCategoryChange = (category, event) => {
+        //const value = event.target.value;
+        setSelectedCategory(category);
       };
-
-       const filteredQuotes = selectedCategory
+// eslint-disable-next-line no-unused-vars
+ const filteredQuotes = selectedCategory
       ? quotes.filter((quote) => quote.category === selectedCategory)
       : quotes;
- 
+
   return (
     <>
     <GlobalStyle />
     <div className="App">
-      <Header 
-      categories={categories}
-      selectedCategory={selectedCategory}
-      handleCategoryChange={handleCategoryChange}/>
+      <Header />
       <AppMain>
+    <CategoryDropdown 
+    categories={categories}
+    selectedCategory={selectedCategory}
+    handleCategoryChange={handleCategoryChange}/>
       <QuoteDisplay 
       selectedCategory={selectedCategory}
       quotes={quotes} />
