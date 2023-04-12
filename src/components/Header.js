@@ -19,14 +19,16 @@ function Header() {
     xl: '1280px',
   };
 
+
   const StyledHeader = styled.header`
-  height: 60px;
+  height: 100px;
   background-color: #000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+  width: 100vw;
 
   @media (min-width: ${breakpoints.md}) {
     padding: 0 40px;

@@ -6,6 +6,8 @@ background-color: #000;
 padding: 1rem;
 color: #ffffff;
 text-align: center;
+width: 100vw;
+margin: 0px;
 `;
 
 

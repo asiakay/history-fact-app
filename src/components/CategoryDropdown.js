@@ -15,7 +15,7 @@ const StyledDropdown = styled(Dropdown)`
   .dropdown-toggle {
     background-color: #4caf50;
     color: white;
-    border-radius: 4px;
+    border-radius: 0px;
     padding: 10px 20px;
     width: 100%;
   }

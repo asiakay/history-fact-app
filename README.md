@@ -27,8 +27,8 @@ To install and run the application on your local machine, follow these steps:
 | JSON Database                     |          |                   |       | [x]  |
 | Mobile Responsiveness             | High     | High              | [x]   |      |
 | Accessibility                     | High     | Medium            | [x]   |      |
-| Search Functionality              | High     | Medium            | [x]   |      |
-| User Authentication               | High     | High              |       |      |
+| View by Category                  | High     | Medium            |       | [x]  |
+| User Authentication               | High     | High              |       | [x]  |
 | Social Sharing                    | Medium   | Low               |       |      |
 | Multi-Language Support            | Medium   | Medium            |       |      |
 | User Profiles                     | Medium   | High              |       |      |

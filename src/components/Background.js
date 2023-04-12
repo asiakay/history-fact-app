@@ -6,13 +6,15 @@ import Links from './Links';
 const StyledBackground = styled.div`
 display: flex;
     flex-direction: column;
-    align-items: left;
-    align-content: left;
-    margin: 100px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 0px;
     padding: 4em;
     text-align: justify;
     background-color: #ffd700;
-    border-radius: 8px;
+    border-radius: 0px;
+    width: 100vw;
 `;
 
 const Title = styled.h2`

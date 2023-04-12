@@ -2,21 +2,41 @@ import React, { useState, useEffect, useCallback } from 'react';
 //import quotes from '../data/quotes.json';
 import styled from 'styled-components';
 
+const breakpoints = {
+  sm: '480px',
+  md: '768px',
+  lg: '1024px',
+  xl: '1280px',
+};
+
+
 const QuoteDisplayContainer = styled.div`
 display: flex;
 flex-direction: column;
-width: 80%;
+width: 100%;
 align-items: center;
 justify-content: center;
 height: calc(
   90vh - 200px
 );
 background-color: #ffffff;
-  border-radius: 8px;
+  border-radius: 0px;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-  margin: 0 auto;
-  max-width: 600px;
+  margin: 0px;
+  max-width: 100%;
   padding: 4px 24px;
+
+  @media (min-width: ${breakpoints.sm}) {
+    padding: 16px;
+  }
+
+  @media (min-width: ${breakpoints.md}) {
+    padding: 32px;
+  }
+
+  @media (min-width: ${breakpoints.lg}) {
+    padding: 48px;
+  }
 `;
 
 const QuoteText = styled.p`
@@ -28,6 +48,14 @@ color: #333;
 text-align: center;
 max-width: 80%;
 height: 20vh;
+
+@media (min-width: ${breakpoints.md}) {
+  font-size: 1.2rem;
+}
+
+@media (min-width: ${breakpoints.lg}) {
+  font-size: 1.4rem;
+}
 `;
 
 const QuoteYear = styled.p`
@@ -47,6 +75,10 @@ const ButtonContainer = styled.div`
   justify-content: center;
   gap: 16px;
   margin-top: 16px;
+
+  @media (min-width: ${breakpoints.md}) {
+    gap: 24px;
+  }
 `;
 
 const Button = styled.button`
@@ -70,6 +102,11 @@ const Button = styled.button`
 
   &:not(:last-child) {
     margin-right: 0.5rem;
+  }
+
+  @media (min-width: ${breakpoints.md}) {
+    font-size: 1.7rem;
+    padding: 1.2rem;
   }
 `;
 
