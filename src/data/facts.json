@@ -31,7 +31,7 @@
     "year": 1885,
     "person": "Sarah E. Goode",
     "lifetime": "1855 - April 8, 1905",
-    "description": "She was the first African American woman to receive a patent for her invention of a folding cabinet bed.",
+    "description": "She was the first African American woman to receive a patent for her invention of a folding cabinet bed. She used her success to open her own furniture store in Chicago.",
     "category": ["Business and Entrepreneurship", "Women"],
     "source": "https://www.biography.com/inventors/sarah-e-goode"
   },
@@ -94,7 +94,7 @@
     "year": 1880,
     "person": "Madam C.J. Walker",
     "lifetime": "December 23, 1867 - May 25, 1919",
-    "description": "Became the first female self-made millionaire in the US, building a successful cosmetics and hair care business for African American women.",
+    "description": "Pioneer of the beauty industry, creating a line of haircare products specifically designed for African American women. She became the first self-made female millionaire in America and used her wealth to support various philanthropic causes.",
     "category": ["Business and Entrepreneurship", "Women"],
     "source": "https://www.history.com/topics/black-history/madame-c-j-walker"
   },
@@ -112,8 +112,8 @@
     "year": 1903,
     "person": "W.E.B. Du Bois",
     "lifetime": "February 23, 1868 - August 27, 1963",
-    "description": "Published \"The Souls of Black Folk,\" a groundbreaking work of sociology that explored the lived experiences of African Americans in the United States.",
-    "category": "Education and Literature",
+    "description": "Writer, sociologist, and civil rights activist who co-founded the National Association for the Advancement of Colored People (NAACP) and authored several influential works on race and racism. Published \"The Souls of Black Folk,\" a groundbreaking work of sociology that explored the lived experiences of African Americans in the United States.",
+    "category": ["Education and Leadership", "Education and Literature"],
     "source": "https://www.naacp.org/naacp-history-w-e-b-dubois/"
   },
   {
@@ -337,9 +337,9 @@
     "year": 1960,
     "person": "Ruby Bridges",
     "lifetime": "September 8, 1954 - present",
-    "description": "Ruby Bridges was the first African American child to desegregate an all-white elementary school in the South. In 1960, she attended William Frantz Elementary School in New Orleans, becoming a symbol of the civil rights movement.",
-    "category": ["Civil Rights and Social Justice", "Women"],
-    "source": "https://www.womenshistory.org/education-resources/biographies/ruby-bridges"
+    "description": "First African American child to attend an all-white elementary school in the South. She was just six years old at the time and became a symbol of the civil rights movement.",
+    "category": ["Education and Leadership", "Women"],
+    "source": "https://www.biography.com/activist/ruby-bridges"
   },
   {
     "id": 39,
@@ -355,8 +355,8 @@
     "year": 1988,
     "person": "Oprah Winfrey",
     "lifetime": "January 29, 1954 - present",
-    "description": "Oprah Winfrey is an American media executive, actress, talk show host, television producer, and philanthropist. She is best known for her talk show 'The Oprah Winfrey Show', which was the highest-rated television program of its kind in history. Oprah became the first African American woman to own and produce her own talk show.",
-    "category": ["Arts and Entertainment", "Women"],
+    "description": "Media mogul who has built a successful career as a television host, actress, producer, and philanthropist. She is widely regarded as one of the most influential people in the world and has used her platform to champion numerous social causes.",
+    "category": ["Arts and Entertainment", "Women", "Media and Entertainment"],
     "source": "https://www.biography.com/movies-tv/oprah-winfrey"
   },
   {
@@ -385,5 +385,116 @@
     "description": "Benjamin Banneker was a self-taught African American scientist and mathematician. He helped establish Washington, D.C.'s boundaries, corresponded with Thomas Jefferson about racial equality, built a wooden clock, and published almanacs containing astronomical observations.",
     "category": "Science and Technology",
     "source": "https://www.whitehousehistory.org/benjamin-banneker"
+  },
+  {
+    "id": 44,
+    "year": 1959,
+    "person": "Berry Gordy",
+    "lifetime": "November 28, 1929 - present",
+    "description": "Founder of Motown Records, one of the most successful record labels of all time. He launched the careers of numerous legendary musicians, including Smokey Robinson, The Supremes, and Marvin Gaye.",
+    "category": ["Business and Entrepreneurship", "Arts and Entertainment"],
+    "source": "https://www.biography.com/musician/berry-gordy"
+  },
+  {
+    "id": 45,
+    "year": 1987,
+    "person": "Reginald F. Lewis",
+    "lifetime": "December 7, 1942 - January 19, 1993",
+    "description": "Lawyer, financier, and philanthropist who is best known for his successful leveraged buyout of the Beatrice Companies. He became the first African American to build a billion-dollar company.",
+    "category": ["Business and Entrepreneurship"],
+    "source": "https://www.blackenterprise.com/how-legendary-businessman-reginald-lewis-continues-to-influence-generations-of-black-entrepreneurs/"
+  },
+  {
+    "id": 46,
+    "year": 1976,
+    "person": "Janice Bryant Howroyd",
+    "lifetime": "September 1, 1952 - present",
+    "description": "Founder and CEO of ActOne Group, a global workforce management company. She is the first African American woman to run a billion-dollar business.",
+    "category": ["Business and Entrepreneurship", "Women"],
+    "source": "https://hbr.org/2023/02/actone-group-founder-janice-bryant-howroyd-never-compromise-your-values-in-a-quest-to-succeed"
+  },
+  {
+    "id": 47,
+    "year": 1980,
+    "person": "Cathy Hughes",
+    "lifetime": "April 22, 1947 - present",
+    "description": "Founder and chairperson of Urban One, a media company that targets African American and urban audiences. She is a pioneering figure in the radio and television industries and has been a major advocate for African American representation in media.",
+    "category": [
+      "Business and Entrepreneurship",
+      "Media and Entertainment",
+      "Women"
+    ],
+    "source": "https://www.radioworld.com/news-and-business/news-makers/for-cathy-hughes-information-is-power"
+  },
+  {
+    "id": 48,
+    "year": 1904,
+    "person": "Mary McLeod Bethune",
+    "lifetime": "July 10, 1875 - May 18, 1955",
+    "description": "Civil rights activist and educator who founded the National Council of Negro Women and Bethune-Cookman University in Florida.",
+    "category": ["Education and Leadership", "Women"],
+    "source": "https://www.biography.com/activist/mary-mcleod-bethune"
+  },
+  {
+    "id": 49,
+    "year": 1881,
+    "person": "Booker T. Washington",
+    "lifetime": "April 5, 1856 - November 14, 1915",
+    "description": "Educator and civil rights leader who founded the Tuskegee Institute, a historically black college in Alabama.",
+    "category": ["Education and Leadership"],
+    "source": "https://www.biography.com/activist/booker-t-washington"
+  },
+  {
+    "id": 59,
+    "year": 1865,
+    "person": "Fanny Jackson Coppin",
+    "lifetime": "January 8, 1837 - January 21, 1913",
+    "description": "Educator and the first African American woman to become a school principal in the United States. She was also the founder of the Institute for Colored Youth in Philadelphia.",
+    "category": ["Education and Leadership", "Women"],
+    "source": "https://thephiladelphiacitizen.org/black-history-month-all-stars-fanny-jackson-coppin/"
+  },
+  {
+    "id": 60,
+    "year": 1947,
+    "person": "John Hope Franklin",
+    "lifetime": "January 2, 1915 - March 25, 2009",
+    "description": "Historian and civil rights activist who wrote extensively on African American history. He was also a professor at Duke University and played a key role in the Civil Rights Act of 1964.",
+    "category": [
+      "Civil Rights and Social Justice",
+      "Education and Leadership",
+      "Education and Literature"
+    ],
+    "source": "https://www.jhfcenter.org/"
+  },
+  {
+    "id": 61,
+    "year": 1938,
+    "person": "Ella Baker",
+    "lifetime": "December 13, 1903 - December 13, 1986",
+    "description": "Civil rights activist who worked closely with the NAACP, the Southern Christian Leadership Conference, and the Student Nonviolent Coordinating Committee. She was a key figure in the civil rights movement and is often overlooked due to her gender.",
+    "category": [
+      "Education and Leadership",
+      "Women",
+      "Civil Rights and Social Justice"
+    ],
+    "source": "https://www.biography.com/activist/ella-baker"
+  },
+  {
+    "id": 62,
+    "year": 1896,
+    "person": "Mary Church Terrell",
+    "lifetime": "September 23, 1863 - July 24, 1954",
+    "description": "Civil rights activist and suffragist who co-founded the National Association of Colored Women and was a founding member of the NAACP.",
+    "category": ["Education and Leadership", "Women"],
+    "source": "https://www.biography.com/activist/mary-church-terrell"
+  },
+  {
+    "id": 61,
+    "year": 1962,
+    "person": "James Meredith",
+    "lifetime": "June 25, 1933 - present",
+    "description": "First African American student to attend the University of Mississippi. He is also a civil rights activist who played a key role in the desegregation of schools in Mississippi.",
+    "category": ["Education and Leadership"],
+    "source": "https://www.biography.com/activist/james-meredith"
   }
 ]

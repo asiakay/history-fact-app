@@ -1,5 +1,7 @@
+//import { response } from 'express';
+
 import React, { useState, useEffect, useCallback } from 'react';
-//import quotes from '../data/quotes.json';
+//import quotes from 'eeeeeeeeee../data/quotes.json';
 import styled from 'styled-components';
 
 const breakpoints = {
@@ -91,7 +93,7 @@ const Button = styled.button`
   border: none;
   background-color: #16d02b;
   color: #000;
-  border-radius: 4px;
+  border-radius: 4px;e
   cursor: pointer;
   font-size: 1.5rem;
   padding: 1rem;
@@ -115,41 +117,57 @@ const Button = styled.button`
   }
 `;
 
-function QuoteDisplay({selectedCategory, quotes}) {
+function FactDisplay({selectedCategory}) {
     
-  const [quote, setQuote] = useState('');
+  const [fact, setFact] = useState(null);
 
   const getRandomQuote = useCallback(() => {
-    // Filter quotes by category if a category is selected
-    const filteredQuotes = selectedCategory
-      ? quotes.filter((quote) => {
-          const categories = Array.isArray(quote.category)
-            ? quote.category
-            : [quote.category];
+    // Filter facts by category if a category is selected
+    fetch('https://history-facts-api.vercel.app/api/facts')
+    .then((response) => response.json())
+    .then((data) => {
+      console.log('data:', data);
+
+              // Filter quotes by category if a category is selected
+
+  
+    const filteredFacts = selectedCategory
+      ? data.filter((fact) => {
+          const categories = Array.isArray(fact.category)
+            ? fact.category
+            : [fact.category];
           return categories.some((cat) => cat === selectedCategory);
         })
-      : quotes;
+      : data;
   
-    if (!filteredQuotes || filteredQuotes.length === 0) {
-      console.error('No quotes data available');
+    if (!filteredFacts || filteredFacts.length === 0) {
+      console.error('No fact data available');
+      console.log('selectedCategory:', selectedCategory);
+
       return;
     }
   
-    const randomIndex = Math.floor(Math.random() * filteredQuotes.length);
-    const randomQuote = filteredQuotes[randomIndex];
-    setQuote(`${randomQuote.year} + ${randomQuote.person} + ${randomQuote.lifetime} + ${randomQuote.description} + ${randomQuote.source}`);
-  }, [selectedCategory, quotes]);
+    const randomIndex = Math.floor(Math.random() * filteredFacts.length);
+    const randomFact = filteredFacts[randomIndex];
+    setFact(randomFact);
+
+  })
+  .catch((error) => {
+    console.error('Error fetching facts:', error);
+
+  });
+ }, [selectedCategory]);
   
 
   useEffect(() => {
     getRandomQuote();
   }, [getRandomQuote]);
 
-  if (typeof quote !== 'string') {
+  if ( !fact) {
     return null;
   }
 
-  const [year, person, lifetime, description, source] = quote.split(' + ');
+  const {year, person, lifetime, description, source} = fact;
 
   return (
    <QuoteDisplayContainer>
@@ -165,4 +183,4 @@ function QuoteDisplay({selectedCategory, quotes}) {
   );
 }
 
-export default QuoteDisplay;
+export default FactDisplay;

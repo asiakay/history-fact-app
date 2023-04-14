@@ -1,6 +1,6 @@
 import React from "react";
 import CategoryDropdown from "./CategoryDropdown";
-import QuoteDisplay from "./QuoteDisplay";
+import FactDisplay from "./FactDisplay";
 import styled from "styled-components";
 import Header from './Header';
 import Background from "./Background";
@@ -35,7 +35,7 @@ const breakpoints = {
     }
   `;
 
-  const AppMain = ({ categories, selectedCategory, handleCategoryChange, quotes }) => {
+  const AppMain = ({ categories, selectedCategory, handleCategoryChange }) => {
     return (
       <>
               <Header />
@@ -45,7 +45,7 @@ const breakpoints = {
             selectedCategory={selectedCategory}
             handleCategoryChange={handleCategoryChange}
           />
-                    <QuoteDisplay selectedCategory={selectedCategory} quotes={quotes} />
+                    <FactDisplay selectedCategory={selectedCategory}/>
 
         <MainContainer>
          

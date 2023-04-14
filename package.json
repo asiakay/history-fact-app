@@ -41,7 +41,9 @@
     "build-storybook": "storybook build",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
-    "analyze": "source-map-explorer 'build/static/js/*.js'"
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "server": "node server.js" 
+
   },
   "eslintConfig": {
     "extends": [
