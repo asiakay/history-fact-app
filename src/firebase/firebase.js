@@ -44,7 +44,7 @@ const provider = new firebase.auth.GoogleAuthProvider();
 // Initialize Cloud Firestore and get a reference to the service
 const db = firebase.firestore();
 /* const customAuth = {
-  ...auth,
+  ...auth,e
   signInWithPopup: (provider) => auth.signInWithPopup(provider),
 };
  */

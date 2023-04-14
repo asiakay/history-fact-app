@@ -12,8 +12,17 @@ import { onAuthStateChanged } from 'firebase/auth';
 function App() {
       /* Add state variables to store the selected category and filtered quotes: */
       const [selectedCategory, setSelectedCategory] = useState('');
-      const categories = Array.from(new Set(quotes.map((quote) => quote.category)));
-    // Add a user state variable
+      
+      const categories = Array.from(
+        new Set(
+          quotes
+          .map((quote) => quote.category)
+          .flat()
+          )
+        );
+    
+    
+      // Add a user state variable
   const [user, setUser] = useState(null);
 
   // Add an effect to listen for authentication changes
@@ -27,15 +36,27 @@ useEffect(() => {
   };
 }, []);
 
-      const handleCategoryChange = (category, event) => {
+const handleCategoryChange = (category, event) => {
+  setSelectedCategory(category);
+};
+
+
+
+/*       const handleCategoryChange = (category, event) => {
         //const value = event.target.value;
         setSelectedCategory(category);
-      };
+      }; */
 // eslint-disable-next-line no-unused-vars
- const filteredQuotes = selectedCategory
-      ? quotes.filter((quote) => quote.category === selectedCategory)
-      : quotes;
+const filteredQuotes = selectedCategory
+  ? quotes.filter((quote) => {
+      const categories = Array.isArray(quote.category)
+        ? quote.category
+        : [quote.category];
+      return categories.some((cat) => cat === selectedCategory);
+    })
+  : quotes;
 
+      
   return (
     <>
     <GlobalStyle />

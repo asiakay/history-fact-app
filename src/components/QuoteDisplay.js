@@ -63,6 +63,11 @@ const QuoteYear = styled.p`
   font-weight: bold;
   margin-bottom: 8px;
 `;
+const QuoteLifetime = styled.p`
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+`;
 
 const QuotePerson = styled.p`
   font-size: 30px;
@@ -115,20 +120,26 @@ function QuoteDisplay({selectedCategory, quotes}) {
   const [quote, setQuote] = useState('');
 
   const getRandomQuote = useCallback(() => {
-        // Filter quotes by category if a category is selected
-        const filteredQuotes = selectedCategory
-        ? quotes.filter((quote) => quote.category === selectedCategory)
-        : quotes;
-    
-if (!filteredQuotes || filteredQuotes.length === 0) {
+    // Filter quotes by category if a category is selected
+    const filteredQuotes = selectedCategory
+      ? quotes.filter((quote) => {
+          const categories = Array.isArray(quote.category)
+            ? quote.category
+            : [quote.category];
+          return categories.some((cat) => cat === selectedCategory);
+        })
+      : quotes;
+  
+    if (!filteredQuotes || filteredQuotes.length === 0) {
       console.error('No quotes data available');
       return;
     }
-    
+  
     const randomIndex = Math.floor(Math.random() * filteredQuotes.length);
     const randomQuote = filteredQuotes[randomIndex];
-    setQuote(`${randomQuote.year} - ${randomQuote.person} - ${randomQuote.description} - ${randomQuote.source}`);
+    setQuote(`${randomQuote.year} + ${randomQuote.person} + ${randomQuote.lifetime} + ${randomQuote.description} + ${randomQuote.source}`);
   }, [selectedCategory, quotes]);
+  
 
   useEffect(() => {
     getRandomQuote();
@@ -138,12 +149,13 @@ if (!filteredQuotes || filteredQuotes.length === 0) {
     return null;
   }
 
-  const [year, person, description, source] = quote.split(' - ');
+  const [year, person, lifetime, description, source] = quote.split(' + ');
 
   return (
    <QuoteDisplayContainer>
       <QuoteYear>{year}</QuoteYear>
       <QuotePerson>{person}</QuotePerson>
+      <QuoteLifetime>{lifetime}</QuoteLifetime>
       <QuoteText>{description}</QuoteText>
       <ButtonContainer>
       <Button onClick={getRandomQuote}>New Fact</Button><br/>

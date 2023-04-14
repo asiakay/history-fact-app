@@ -47,8 +47,13 @@ const StyledDropdownItem = styled(Dropdown.Item)`
 `;
 
 const CategoryDropdown = ({ categories, selectedCategory, handleCategoryChange }) => {
+  const handleSelect = (selectedValue) => {
+    const updatedSelectedCategories = selectedValue === '' ? '' : selectedValue;
+    handleCategoryChange(updatedSelectedCategories);
+  };
+
   return (
-    <StyledDropdown onSelect={handleCategoryChange}>
+    <StyledDropdown onSelect={handleSelect}>
       <Dropdown.Toggle variant="success" id="dropdown-basic">
         {selectedCategory || 'All Categories'}
       </Dropdown.Toggle>
@@ -64,7 +69,6 @@ const CategoryDropdown = ({ categories, selectedCategory, handleCategoryChange }
     </StyledDropdown>
   );
 };
-
 
 
 export default CategoryDropdown;
