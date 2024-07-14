@@ -121,6 +121,7 @@ const Button = styled.button`
 function FactDisplay({selectedCategory}) {
     
   const [fact, setFact] = useState(null);
+  const siteUrl = 'https://history-fact-app.vercel.app';
 
   const getRandomQuote = useCallback(() => {
     // Filter facts by category if a category is selected
@@ -180,7 +181,11 @@ function FactDisplay({selectedCategory}) {
       <Button onClick={getRandomQuote}>New Fact</Button><br/>
       <Button onClick={() => window.open(source, '_blank')}>Learn More</Button>
       </ButtonContainer>
-      <ShareButtonsComponent title={description} url={source || window.location.href} />
+      <ShareButtonsComponent 
+      title={description} 
+      url={source || window.location.href} 
+      siteUrl={siteUrl}
+      />
     </QuoteDisplayContainer>
   );
 }
