@@ -1,6 +1,7 @@
 //import { response } from 'express';
 
 import React, { useState, useEffect, useCallback } from 'react';
+import ShareButtonsComponent from './ShareButtonsComponent';
 //import quotes from 'eeeeeeeeee../data/quotes.json';
 import styled from 'styled-components';
 
@@ -93,7 +94,7 @@ const Button = styled.button`
   border: none;
   background-color: #16d02b;
   color: #000;
-  border-radius: 4px;e
+  border-radius: 4px;
   cursor: pointer;
   font-size: 1.5rem;
   padding: 1rem;
@@ -179,6 +180,7 @@ function FactDisplay({selectedCategory}) {
       <Button onClick={getRandomQuote}>New Fact</Button><br/>
       <Button onClick={() => window.open(source, '_blank')}>Learn More</Button>
       </ButtonContainer>
+      <ShareButtonsComponent/>
     </QuoteDisplayContainer>
   );
 }

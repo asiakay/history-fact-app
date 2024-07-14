@@ -12,8 +12,7 @@ const Home = ({handleCategoryChange, categories, selectedCategory}) => {
         />    
 
 
-      <h1>Welcome to History Facts</h1>
-      <p>Explore and learn interesting facts about history.</p>
+     
 
     </div>
   );
