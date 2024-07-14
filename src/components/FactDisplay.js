@@ -180,7 +180,7 @@ function FactDisplay({selectedCategory}) {
       <Button onClick={getRandomQuote}>New Fact</Button><br/>
       <Button onClick={() => window.open(source, '_blank')}>Learn More</Button>
       </ButtonContainer>
-      <ShareButtonsComponent/>
+      <ShareButtonsComponent title={description} url={source || window.location.href} />
     </QuoteDisplayContainer>
   );
 }

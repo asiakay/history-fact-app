@@ -12,28 +12,28 @@ import {
   EmailIcon
 } from 'react-share';
 
-const ShareButtonsComponent = () => {
-  const shareUrl = 'https://history-fact-app.vercel.app';
-  const title = 'Explore and learn interesting facts about history.';
+const ShareButtonsComponent = ({ title, url }) => {
+  /* const shareUrl = 'https://history-fact-app.vercel.app';
+  const title = 'Explore and learn interesting facts about history.'; */
 
   return (
     <div>
-      <FacebookShareButton url={shareUrl} quote={title}>
-        <FacebookIcon size={32} round />
-      </FacebookShareButton>
-      <TwitterShareButton url={shareUrl} title={title}>
-        <TwitterIcon size={32} round />
-      </TwitterShareButton>
-      <LinkedinShareButton url={shareUrl} title={title}>
-        <LinkedinIcon size={32} round />
-      </LinkedinShareButton>
-      <RedditShareButton url={shareUrl} title={title}>
-        <RedditIcon size={32} round />
-      </RedditShareButton>
-      <EmailShareButton url={shareUrl} subject={title} body="Check out this site!">
-        <EmailIcon size={32} round />
-      </EmailShareButton>
-    </div>
+    <FacebookShareButton url={url} quote={title}>
+      <FacebookIcon size={32} round />
+    </FacebookShareButton>
+    <TwitterShareButton url={url} title={title}>
+      <TwitterIcon size={32} round />
+    </TwitterShareButton>
+    <LinkedinShareButton url={url} title={title}>
+      <LinkedinIcon size={32} round />
+    </LinkedinShareButton>
+    <RedditShareButton url={url} title={title}>
+      <RedditIcon size={32} round />
+    </RedditShareButton>
+    <EmailShareButton url={url} subject={title} body="Check out this site!">
+      <EmailIcon size={32} round />
+    </EmailShareButton>
+  </div>
   );
 }
 
