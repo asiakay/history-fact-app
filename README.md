@@ -1,6 +1,5 @@
 ![BlackHistoryFactsApp](https://user-images.githubusercontent.com/66960776/236667844-10563ac1-41c4-44b1-bbb7-5260f80b54af.jpg)
 
-
 # BlackHistoryFacts
 
 BlackHistoryFacts is a web application built using ReactJS that provides users with positive contributions made by historically marginalized groups. The app aims to challenge false narratives that link race with positive contributions to society and shed light on the pervasive nature of systemic racism.
@@ -18,8 +17,20 @@ To install and run the application on your local machine, follow these steps:
 1. Clone the repository: `git clone https://github.com/asiakay/history-fact-app.git`
 2. Navigate to the project directory: `cd history-fact-app`
 3. Install dependencies: `npm install`
-4. Run the application: `npm start`
-5. Open your web browser and navigate to `http://localhost:3000`
+   - Ensure you have Node.js (version >= 14.0.0) and npm (version >= 6.0.0) installed on your machine.
+4. Create a Firebase project and obtain API keys:
+   - If you haven't already set up Firebase for this project, follow Firebase's [setup instructions](https://firebase.google.com/docs/web/setup) to create a Firebase project, set up Firebase Authentication, and obtain the necessary API keys.
+5. Create a `.env` file in the root directory with the following content:
+
+```
+REACT_APP_FIREBASE_API_KEY=your_api_key_here
+REACT_APP_FIREBASE_AUTH_DOMAIN=your_firebase_project_id.firebaseapp.com
+REACT_APP_FIREBASE_PROJECT_ID=your_firebase_project_id
+```
+
+6. Add `.env` to your `.gitignore` file to keep your API keys secret:
+7. Run the application: `npm start`
+8. Open your web browser and navigate to `http://localhost:3000`
 
 ## Features and Functionality
 
