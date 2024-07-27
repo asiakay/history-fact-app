@@ -1,4 +1,5 @@
 /* Add your global styles here */
+
 :root {
   --primary-color: #333;
   --secondary-color: #555;
@@ -149,3 +150,11 @@ textarea {
   cursor: not-allowed;
 }
 /* Additional global styles... */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  text-decoration: none;
+}
