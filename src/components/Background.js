@@ -3,6 +3,9 @@ import styled from 'styled-components';
 //import ListGroup from 'react-bootstrap/ListGroup';
 import Links from './Links';
 import Accordion from 'react-bootstrap/Accordion';
+import Timeline from './Timeline';
+//import GlobalStyles from '../styles/GlobalStyles';
+
 
 const StyledBackground = styled.div`
 display: flex;
@@ -46,7 +49,10 @@ const StyledAccordion = styled(Accordion)`
 
 function Background(){
 return(
+  <>
+{/*   <GlobalStyles /> */}
 <StyledBackground>
+  <Timeline/>
    
 <StyledAccordion flush>
 
@@ -86,6 +92,7 @@ In conclusion, this app is a powerful tool for combating systemic oppression and
 <Title>Learn More</Title>
 <Links />
       </StyledBackground>
+      </>
       );
       }
 
