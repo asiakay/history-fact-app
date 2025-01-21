@@ -1,4 +1,4 @@
-![BlackHistoryFactsApp](https://user-images.githubusercontent.com/66960776/236667844-10563ac1-41c4-44b1-bbb7-5260f80b54af.jpg)
+![BlackHistoryFactsApp](https://raw.githubusercontent.com/asiakay/history-fact-app/refs/heads/main/IMG_3432.jpeg)
 
 # BlackHistoryFacts
 
