@@ -3,10 +3,12 @@ import Header from './Header';
 import ProfileForm from './ProfileForm';
 import { db, getUserProfile } from '../firebase/firebase';
 import '../styles/globalStyles.css';
+import { useToast } from './Toast';
 
 const Profile = ({ user }) => {
   //const [showProfileForm, setShowProfileForm] = useState(false);
   const [userProfile, setUserProfile] = useState(null);
+  const showToast = useToast();
 
   useEffect(() => {
     if (user){
@@ -38,9 +40,10 @@ const Profile = ({ user }) => {
   const saveProfileChanges = async (profileData) => {
     try {
       await db.collection('users').doc(user.uid).update(profileData);
-      console.log('Profile updated successfully');
+      showToast('Profile saved successfully!', 'success');
     } catch (error) {
       console.error('Error updating profile: ', error);
+      showToast('Failed to save profile. Please try again.', 'error');
     }
   };
 

@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useToast } from './Toast';
 
 const ShareModal = ({ quote }) => {
   const [showModal, setShowModal] = useState(false);
+  const showToast = useToast();
 
   const handleShareClick = () => {
     setShowModal(true);
@@ -13,7 +15,7 @@ const ShareModal = ({ quote }) => {
 
   const handleCopyClick = () => {
     navigator.clipboard.writeText(quote.description);
-    alert('Quote copied to clipboard!');
+    showToast('Quote copied to clipboard!', 'success');
   };
 
   const handleTweetClick = () => {
