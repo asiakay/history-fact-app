@@ -1,6 +1,7 @@
 import React from 'react';
 import { Dropdown, /* DropdownButton */ } from 'react-bootstrap';
 import styled from 'styled-components';
+import { useToast } from './Toast';
 
 const breakpoints = {
   sm: '480px',
@@ -47,9 +48,13 @@ const StyledDropdownItem = styled(Dropdown.Item)`
 `;
 
 const CategoryDropdown = ({ categories, selectedCategory, handleCategoryChange }) => {
+  const showToast = useToast();
+
   const handleSelect = (selectedValue) => {
     const updatedSelectedCategories = selectedValue === '' ? '' : selectedValue;
     handleCategoryChange(updatedSelectedCategories);
+    const label = updatedSelectedCategories || 'All Categories';
+    showToast(`Showing: ${label}`, 'info', 2000);
   };
 
   return (

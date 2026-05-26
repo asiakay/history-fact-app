@@ -8,6 +8,7 @@ import Profile from './components/Profile';
 import Home from './components/Home'; // Import the Home component
 import { auth } from './firebase/firebase'; // Import your Firebase auth instance
 import { onAuthStateChanged } from 'firebase/auth';
+import { ToastProvider } from './components/Toast';
 
 function App() {
   const [facts, setFacts] = useState([]);
@@ -91,17 +92,19 @@ const filteredFacts = selectedCategory
   return (
     <>
     <GlobalStyle />
+    <ToastProvider>
     <Router>
 
     <div className="App">
-      
+
 <Routes>
 <Route path="/" element={<Home handleCategoryChange={handleCategoryChange} categories={categories} facts={facts} selectedCategory={selectedCategory} />} />
           <Route path="/profile" element={<Profile user={user} />} />
           </Routes>
 
-    </div> 
+    </div>
     </Router>
+    </ToastProvider>
 </>
 
   );
